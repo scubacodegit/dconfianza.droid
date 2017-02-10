@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/spinner_location"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:gravity="left|center_vertical"
+        android:spinnerMode="dialog"
+        style="@android:style/Widget.Spinner"/>
+
+    <Spinner
+        android:id="@+id/spinner_service"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:gravity="left|center_vertical"
+        android:spinnerMode="dialog"
+        style="@android:style/Widget.Spinner"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="15dp"
+        android:scrollbars="vertical" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

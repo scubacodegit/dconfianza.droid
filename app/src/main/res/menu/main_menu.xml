@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/About" android:title="@string/misc_About"  app:showAsAction="never"/>
+    <item android:id="@+id/ContactUs" android:title="@string/misc_contact_us" app:showAsAction="never"/>
+    <item android:id="@+id/Logout" android:title="@string/misc_Logout" app:showAsAction="never"/>
+</menu>

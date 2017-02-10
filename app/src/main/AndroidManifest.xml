@@ -1,0 +1,61 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.scubacode.dconfianza">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.scubacode.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.scubacode.view.CreateAccountActivity"
+            android:parentActivityName="com.scubacode.LoginActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.scubacode.LoginActivity" />
+        </activity>
+
+        <activity
+            android:name="com.scubacode.dconfianza.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.scubacode.dconfianza.WorkerProfileActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.scubacode.dconfianza.AddRatingActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.scubacode.dconfianza.ContactActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.scubacode.view.AboutActivity"
+            android:screenOrientation="portrait"
+            />
+
+    </application>
+
+</manifest>
