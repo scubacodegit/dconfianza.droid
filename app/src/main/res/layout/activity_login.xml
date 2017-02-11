@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".LoginActivity"
+    tools:context="com.scubacode.LoginActivity"
     android:background="@drawable/bg_login"
     >
 
@@ -61,6 +61,7 @@
                         android:layout_height="wrap_content"
                         android:hint="@string/reg_email"
                         android:inputType="textEmailAddress"
+                        android:textSize="@dimen/edittext_textsize_login"
                         />
 
                 </android.support.design.widget.TextInputLayout>
@@ -77,6 +78,7 @@
                         android:layout_height="wrap_content"
                         android:hint="@string/reg_password"
                         android:inputType="textPassword"
+                        android:textSize="@dimen/edittext_textsize_login"
                         />
 
                 </android.support.design.widget.TextInputLayout>
@@ -100,7 +102,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/dont_have_account"
-                        android:textColor="@android:color/white"
+                        android:textColor="@color/LabelColor"
                         android:textStyle="bold"
                         android:textSize="@dimen/textsize_donthaveaccount"
 
@@ -111,7 +113,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/create_here"
-                        android:textColor="@android:color/white"
+                        android:textColor="@color/ButtonBackGround"
                         android:textStyle="bold"
                         android:textSize="@dimen/textsize_donthaveaccount"
                         android:layout_toRightOf="@+id/dontHaveAccount"

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#2196F3</color>
-    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorPrimary">#11113E</color>
+    <color name="colorPrimaryDark">#27B472</color>
     <color name="colorAccent">#FF4081</color>
     <color name="editTextColorWhite">#FFFFFF</color>
     <color name="editTextColorBlack">#000000</color>
@@ -16,5 +16,8 @@
     <color name="colorPrimaryLlight">#FFCDD2</color>
     <color name="colorLabel">#212121</color>
     <color name="colorTextContent">#C2C2B6</color>
+
+    <color name="ButtonBackGround">#27B472</color>
+    <color name="LabelColor">#FFFFFF</color>
 
 </resources>

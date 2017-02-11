@@ -28,6 +28,7 @@
 
     <!--Registration-->
     <string name="reg_register">Registrarme</string>
+    <string name="reg_signup">Registrarse</string>
     <string name="reg_singup">No tengo cuenta, Registrarme!</string>
     <string name="reg_email_registration">E-mail</string>
     <string name="reg_login">Ya tengo cuenta</string>
