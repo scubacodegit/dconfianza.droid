@@ -19,5 +19,8 @@
 
     <color name="ButtonBackGround">#27B472</color>
     <color name="LabelColor">#FFFFFF</color>
+    <color name="backGroundColor">#303545</color>
+    <color name="ToolBarHamburgerColor">#27B472</color>
+
 
 </resources>

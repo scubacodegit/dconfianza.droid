@@ -34,11 +34,14 @@ public class ActivityBase extends AppCompatActivity
     public void showToolbar(String tittle, boolean upButton){
         this.showmenu=true;
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+
         setSupportActionBar(toolbar);
         if (tittle!=null)
             getSupportActionBar().setTitle(tittle);
         if(upButton)
             getSupportActionBar().setDisplayHomeAsUpEnabled(upButton);
+
+        getSupportActionBar().setIcon(R.drawable.img_logo);
     }
 
     public void setShowmenu(Boolean showmenu) {

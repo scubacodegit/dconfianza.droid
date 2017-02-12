@@ -34,7 +34,8 @@
 
         <activity
             android:name="com.scubacode.dconfianza.MainActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:label=""/>
 
         <activity
             android:name="com.scubacode.dconfianza.WorkerProfileActivity"
