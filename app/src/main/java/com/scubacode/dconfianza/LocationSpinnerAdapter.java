@@ -1,6 +1,7 @@
 package com.scubacode.dconfianza;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -32,7 +33,7 @@ public class LocationSpinnerAdapter extends ArrayAdapter<Location>
         return values.get(position);
     }
 
-    public int GetPositionByItemID(int itemID)
+   /* public int GetPositionByItemID(int itemID)
     {
         int position = -1;
 
@@ -49,7 +50,7 @@ public class LocationSpinnerAdapter extends ArrayAdapter<Location>
         return position;
 
     }
-
+*/
     public long getItemId(int position) {
         return position;
     }
@@ -58,6 +59,7 @@ public class LocationSpinnerAdapter extends ArrayAdapter<Location>
     public View getView(int position, View convertView, ViewGroup parent) {
         TextView label = (TextView) super.getView(position, convertView, parent);
         label.setText(this.getItem(position).getName());
+        label.setTextColor(Color.WHITE);
         return label;
     }
 

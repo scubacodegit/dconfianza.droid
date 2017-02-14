@@ -1,6 +1,7 @@
 package com.scubacode.dconfianza;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -56,6 +57,7 @@ public class ServiceSpinnerAdapter extends ArrayAdapter<Service>
     public View getView(int position, View convertView, ViewGroup parent) {
         TextView label = (TextView) super.getView(position, convertView, parent);
         label.setText(this.getItem(position).getName());
+        label.setTextColor(Color.WHITE);
         return label;
     }
 
