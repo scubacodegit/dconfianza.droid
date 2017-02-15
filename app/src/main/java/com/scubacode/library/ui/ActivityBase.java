@@ -41,7 +41,7 @@ public class ActivityBase extends AppCompatActivity
         if(upButton)
             getSupportActionBar().setDisplayHomeAsUpEnabled(upButton);
 
-        getSupportActionBar().setIcon(R.drawable.img_logo);
+        getSupportActionBar().setIcon(R.drawable.toolbar_logo);
     }
 
     public void setShowmenu(Boolean showmenu) {
