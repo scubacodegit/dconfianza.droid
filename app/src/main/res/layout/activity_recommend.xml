@@ -121,10 +121,10 @@
     <Button
         android:id="@+id/button_add_worker"
         android:text="@string/main_add_worker"
-        android:textAllCaps="false"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/RaisedButtonDark"/>
+        android:theme="@style/RaisedButtonDark"
+        />
 </LinearLayout>
 </ScrollView>
 </android.support.design.widget.CoordinatorLayout>
