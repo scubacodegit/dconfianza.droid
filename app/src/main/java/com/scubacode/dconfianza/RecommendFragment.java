@@ -15,6 +15,7 @@ import android.widget.Spinner;
 
 import com.scubacode.dconfianza.R;
 
+import com.scubacode.library.ui.ActivityFragmentBase;
 import com.scubacode.library.utility.Email;
 import com.scubacode.model.Location;
 import com.scubacode.model.Service;
@@ -33,7 +34,7 @@ import retrofit2.Response;
 /**
  * Created by htorres on 24/07/2016.
  */
-public class RecommendFragment extends ActivityFragmentFormBase
+public class RecommendFragment extends ActivityFragmentBase
 {
 
     //Form Fields

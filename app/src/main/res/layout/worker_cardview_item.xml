@@ -18,10 +18,12 @@
             android:id="@+id/image_worker_item"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/workeritem"
+            android:src="@mipmap/ic_launcher"
             android:layout_alignParentLeft="true"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp" />
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="17dp"
+            android:layout_centerVertical="true"/>
         <LinearLayout
             android:id="@+id/linearly_worker_info"
             android:orientation="vertical"

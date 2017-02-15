@@ -12,6 +12,7 @@ import android.widget.AdapterView;
 import android.widget.Spinner;
 
 import com.scubacode.dconfianza.R;
+import com.scubacode.library.ui.ActivityFragmentBase;
 import com.scubacode.model.Location;
 import com.scubacode.model.Service;
 import com.scubacode.model.Worker;
@@ -29,7 +30,7 @@ import retrofit2.Response;
 /**
  * Created by htorres on 24/07/2016.
  */
-public class SearchFragment extends Fragment
+public class SearchFragment extends ActivityFragmentBase
 {
     Spinner locationSpinner=null;
     Spinner serviceSpinner=null;
