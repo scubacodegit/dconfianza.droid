@@ -159,5 +159,8 @@
         <item name="android:layout_marginLeft">5dp</item>
     </style>
 
+    <style name="RatingBar">
+        <item name="colorControlNormal">#FFFFFF</item>
+    </style>
 
 </resources>
