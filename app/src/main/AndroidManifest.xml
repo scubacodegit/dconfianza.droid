@@ -40,6 +40,7 @@
         <activity
             android:name="com.scubacode.dconfianza.WorkerProfileActivity"
             android:screenOrientation="portrait"
+            android:label=""
             />
 
         <activity

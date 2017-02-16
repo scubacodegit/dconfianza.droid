@@ -43,6 +43,12 @@
         <item name="android:textColor">@color/colorLabel</item>
     </style>
 
+    <style name="label2_style" >
+        <item name="android:fontFamily">sans-serif-regular</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/LabelColor</item>
+    </style>
+
     <style name="text_content_style" >
         <item name="android:fontFamily">sans-serif-regular</item>
         <item name="android:textSize">15sp</item>
