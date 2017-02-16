@@ -2,6 +2,8 @@ package com.scubacode.dconfianza;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -49,11 +51,10 @@ public class WorkerProfileActivity extends ActivitySecure {
         Gson gson = new Gson();
         worker =  gson.fromJson(getIntent().getStringExtra("Worker"),Worker.class);
 
-        TextView text_add_comment = (TextView) findViewById(R.id.text_add_comment);
-        text_add_comment.setOnClickListener(new View.OnClickListener()
-        {
-            public void onClick(View v)
-            {
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 try
                 {
                     Gson gson = new Gson();
@@ -67,7 +68,6 @@ public class WorkerProfileActivity extends ActivitySecure {
                 }
             }
         });
-
         Call<List<WorkerReview>> call = ApiAdapter.getApiService().getWorkerReviews(worker.getID());
         call.enqueue(new Callback<List<WorkerReview>>()
         {
