@@ -7,67 +7,75 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:context="com.scubacode.dconfianza.AddRatingActivity"
-    android:background="@color/colorPrimary">
+    android:background="@color/backGroundColor">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        >
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        <include layout="@layout/actionbar_toolbar"/>
 
-        <TextView
-            android:id="@+id/label_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/main_name"
-            style="@style/label_style"
-            android:layout_marginRight="10dp"
-            />
-
-        <TextView
-            android:id="@+id/text_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/colorTextContent"
-            android:fontFamily="sans-serif-regular"
-            />
-
-    </LinearLayout>
-
-    <RatingBar
-        android:id="@+id/rating_bar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:numStars="5"
-        android:stepSize="1.0"
-         />
-
-    <EditText
-        android:id="@+id/text_comment"
-        android:inputType="textMultiLine"
-        android:lines="8"
-        android:minLines="6"
-        android:maxLines="10"
-        android:gravity="top|left"
-        android:layout_height="wrap_content"
-        android:layout_width="fill_parent"
-        android:scrollbars="vertical"
-        android:hint="@string/main_add_rating"
-        />
-
-    <Button
-        android:id="@+id/button_add_rating"
-        android:text="@string/main_submit_rating"
-        android:textAllCaps="false"
+        <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/RaisedButtonDark"
-        />
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
+                <TextView
+                    android:id="@+id/label_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_name"
+                    style="@style/label2_style"
+                    />
+
+                <TextView
+                    android:id="@+id/text_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/DataOnCardStyle"
+                    />
+
+            </LinearLayout>
+
+            <RatingBar
+                android:id="@+id/rating_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="1.0"
+                 />
+
+            <EditText
+                android:id="@+id/text_comment"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:minLines="6"
+                android:maxLines="10"
+                android:gravity="top|left"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:scrollbars="vertical"
+                android:hint="@string/main_add_rating"
+                />
+
+            <Button
+                android:id="@+id/button_add_rating"
+                android:text="@string/main_submit_rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/RaisedButtonDark"
+                />
+
+        </LinearLayout>
     </LinearLayout>
 
 </android.support.design.widget.CoordinatorLayout>

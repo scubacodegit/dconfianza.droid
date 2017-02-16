@@ -36,51 +36,66 @@ public class AddRatingActivity extends ActivitySecure {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_rating);
-        this.setShowmenu(true);
-
-        Gson gson = new Gson();
-        worker =  gson.fromJson(getIntent().getStringExtra("Worker"),Worker.class);
-
-        TextView text_name = (TextView) findViewById(R.id.text_name);
-        text_name.setText(String.format("%1$s %2$s",worker.getFirstName(),worker.getLastName()));
-
-        final RatingBar rating_bar = (RatingBar) findViewById(R.id.rating_bar);
-
-        Button button_add_rating = (Button) findViewById(R.id.button_add_rating);
-        button_add_rating.setOnClickListener(new View.OnClickListener()
+        try
         {
-
-            public void onClick(View v)
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_add_rating);
+            if(!userIsLoggedIn)
             {
-                try
-                {
-                    EditText text_comment = (EditText) findViewById(R.id.text_comment);
-                    String comment = text_comment.getText().toString();
-                    double rating = (double)rating_bar.getRating();
-                    if(comment.length()==0)
-                    {
-                        reportTransient(getString(R.string.main_add_comment));
-                        return;
-                    }
-
-                    if(rating==0)
-                    {
-                        reportTransient(getString(R.string.main_select_rating));
-                        return;
-                    }
-
-                    AddComment(session.getUser().getUserID(),worker.getID(),comment,rating);
-
-                }
-                catch(Exception ex)
-                {
-                    handleException(ex,true);
-                }
-
+                finish();
+                this.LoginRedirect();
+                return;
             }
-        });
+            showToolbar(null, false);
+
+            Gson gson = new Gson();
+            worker =  gson.fromJson(getIntent().getStringExtra("Worker"),Worker.class);
+
+            TextView text_name = (TextView) findViewById(R.id.text_name);
+            text_name.setText(String.format("%1$s %2$s",worker.getFirstName(),worker.getLastName()));
+
+            final RatingBar rating_bar = (RatingBar) findViewById(R.id.rating_bar);
+
+            Button button_add_rating = (Button) findViewById(R.id.button_add_rating);
+            button_add_rating.setOnClickListener(new View.OnClickListener()
+            {
+
+                public void onClick(View v)
+                {
+                    try
+                    {
+                        EditText text_comment = (EditText) findViewById(R.id.text_comment);
+                        String comment = text_comment.getText().toString();
+                        double rating = (double)rating_bar.getRating();
+                        if(comment.length()==0)
+                        {
+                            reportTransient(getString(R.string.main_add_comment));
+                            return;
+                        }
+
+                        if(rating==0)
+                        {
+                            reportTransient(getString(R.string.main_select_rating));
+                            return;
+                        }
+
+                        AddComment(session.getUser().getUserID(),worker.getID(),comment,rating);
+
+                    }
+                    catch(Exception ex)
+                    {
+                        handleException(ex,true);
+                    }
+
+                }
+            });
+        }
+        catch(Exception ex)
+        {
+            handleException(ex);
+        }
+
+
 
     }
 

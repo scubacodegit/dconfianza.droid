@@ -11,19 +11,21 @@
 <LinearLayout
     android:orientation="vertical"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
 
     <TextView
         android:id="@+id/text_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/text_content_style"/>
+        style="@style/LabelOnCardStyle"/>
 
     <TextView
         android:id="@+id/text_created_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/text_content_style"/>
+        style="@style/LabelOnCardStyle"/>
 
 
     <RatingBar
@@ -40,7 +42,7 @@
         android:id="@+id/text_comment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/text_content_style"/>
+        style="@style/LabelOnCardStyle"/>
 
 </LinearLayout>
 

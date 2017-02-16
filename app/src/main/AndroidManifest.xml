@@ -46,16 +46,19 @@
         <activity
             android:name="com.scubacode.dconfianza.AddRatingActivity"
             android:screenOrientation="portrait"
+            android:label=""
             />
 
         <activity
             android:name="com.scubacode.dconfianza.ContactActivity"
             android:screenOrientation="portrait"
+            android:label=""
             />
 
         <activity
             android:name="com.scubacode.view.AboutActivity"
             android:screenOrientation="portrait"
+            android:label=""
             />
 
     </application>

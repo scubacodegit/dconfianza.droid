@@ -163,7 +163,7 @@
             android:id="@+id/text_add_comment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/label_style"
+            style="@style/label2_style"
             android:text="@string/main_add_rating"
             android:layout_span="2"
             />
