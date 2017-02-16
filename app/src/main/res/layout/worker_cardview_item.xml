@@ -40,15 +40,13 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/colorLabel"
-                    android:fontFamily="sans-serif-regular"
-                    android:text="@string/reg_first_name"/>
+                    android:text="@string/reg_first_name"
+                    style="@style/LabelOnCardStyle"/>
                 <TextView
                     android:id="@+id/text_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/colorTextContent"
-                    android:fontFamily="sans-serif-regular" />
+                    style="@style/DataOnCardStyle"/>
             </LinearLayout>
 
             <LinearLayout
@@ -59,16 +57,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/colorLabel"
-                    android:fontFamily="sans-serif-regular"
-                    android:text="@string/reg_email"/>
+                    android:text="@string/reg_email"
+                    style="@style/LabelOnCardStyle"/>
 
                 <TextView
                     android:id="@+id/text_email"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/colorTextContent"
-                    android:fontFamily="sans-serif-regular" />
+                    style="@style/DataOnCardStyle"/>
 
             </LinearLayout>
 
@@ -80,16 +76,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/colorLabel"
-                    android:fontFamily="sans-serif-regular"
-                    android:text="@string/main_mobile"/>
+                    android:text="@string/main_mobile"
+                    style="@style/LabelOnCardStyle"/>
 
                 <TextView
                     android:id="@+id/text_mobil_phone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/colorTextContent"
-                    android:fontFamily="sans-serif-regular" />
+                    style="@style/DataOnCardStyle"/>
             </LinearLayout>
 
 
@@ -102,16 +96,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/colorLabel"
-                    android:fontFamily="sans-serif-regular"
-                    android:text="@string/main_work"/>
+                    android:text="@string/main_work"
+                    style="@style/LabelOnCardStyle"/>
 
                 <TextView
                     android:id="@+id/text_work_phone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/colorTextContent"
-                    android:fontFamily="sans-serif-regular" />
+                    style="@style/DataOnCardStyle"/>
 
             </LinearLayout>
 

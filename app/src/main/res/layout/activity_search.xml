@@ -2,7 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
 
     <Spinner
         android:id="@+id/spinner_location"
@@ -31,8 +33,6 @@
         android:layout_height="match_parent"
         android:layout_marginTop="13dp"
         android:layout_marginBottom="13dp"
-        android:layout_marginLeft="11dp"
-        android:layout_marginRight="15dp"
         android:scrollbars="vertical" />
 
     </android.support.v4.widget.SwipeRefreshLayout>

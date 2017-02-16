@@ -140,4 +140,18 @@
         <item name="android:textColorSecondary">@color/ToolBarHamburgerColor</item>
     </style>
 
+    <style name="LabelOnCardStyle" parent="AppTheme">
+        <item name="android:textColor">@color/colorLabel</item>
+        <item name="android:fontFamily">sans-serif-regular</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="DataOnCardStyle" parent="AppTheme">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:fontFamily">sans-serif-regular</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
+
 </resources>
