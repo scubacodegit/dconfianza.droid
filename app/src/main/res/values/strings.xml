@@ -78,4 +78,7 @@
     <string name="main_message_received">Hemos recibido su mendaje. Gracias!</string>
     <string name="main_service_nodata">No se encontraron colaboradores.</string>
 
+    <string name="wkprofile_addedby">Agregado por</string>
+    <string name="wkprofile_addedDate">Fecha</string>
+
 </resources>
