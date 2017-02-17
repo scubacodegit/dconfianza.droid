@@ -33,14 +33,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/main_name"
-                style="@style/label2_style"
+                style="@style/LabelOnWorkerProfileActivity"
                 />
 
             <TextView
                 android:id="@+id/text_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/DataOnCardStyle"
+                style="@style/ValueOnWorkerProfileActivity"
                 />
 
         </TableRow>
@@ -52,13 +52,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/main_mobile_phone"
-                style="@style/label2_style"/>
+                style="@style/LabelOnWorkerProfileActivity"/>
 
             <TextView
                 android:id="@+id/text_mobile_phone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/DataOnCardStyle"
+                style="@style/ValueOnWorkerProfileActivity"
                 />
         </TableRow>
         <TableRow
@@ -69,14 +69,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/main_work_phone"
-                style="@style/label2_style"
+                style="@style/LabelOnWorkerProfileActivity"
                />
 
             <TextView
                 android:id="@+id/text_work_phone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/DataOnCardStyle"
+                style="@style/ValueOnWorkerProfileActivity"
                 />
         </TableRow>
 
@@ -88,14 +88,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/main_email"
-                style="@style/label2_style"
+                style="@style/LabelOnWorkerProfileActivity"
                 />
 
             <TextView
                 android:id="@+id/text_email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/DataOnCardStyle"
+                style="@style/ValueOnWorkerProfileActivity"
                 />
         </TableRow>
 
@@ -107,14 +107,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/main_location"
-                style="@style/label2_style"
+                style="@style/LabelOnWorkerProfileActivity"
                 />
 
             <TextView
                 android:id="@+id/text_location"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/DataOnCardStyle"
+                style="@style/ValueOnWorkerProfileActivity"
                 />
         </TableRow>
 
@@ -126,14 +126,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/main_service"
-                style="@style/label2_style"
+                style="@style/LabelOnWorkerProfileActivity"
                 />
 
             <TextView
                 android:id="@+id/text_service"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/DataOnCardStyle"
+                style="@style/ValueOnWorkerProfileActivity"
                 />
         </TableRow>
 

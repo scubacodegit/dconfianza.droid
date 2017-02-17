@@ -150,6 +150,7 @@
         <item name="android:textColor">@color/colorLabel</item>
         <item name="android:fontFamily">sans-serif-regular</item>
         <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
     <style name="DataOnCardStyle" parent="AppTheme">
@@ -157,17 +158,31 @@
         <item name="android:fontFamily">sans-serif-regular</item>
         <item name="android:textSize">14sp</item>
         <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
     <style name="DataOnCardNoMarginStyle" parent="AppTheme">
         <item name="android:textColor">@color/colorPrimaryDark</item>
         <item name="android:fontFamily">sans-serif-regular</item>
         <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
     <style name="RatingBar">
         <item name="colorControlNormal">@color/colorPrimaryDark</item>
     </style>
 
+    <style name="LabelOnWorkerProfileActivity" parent="AppTheme">
+        <item name="android:fontFamily">sans-serif-regular</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/LabelColor</item>
+    </style>
+
+    <style name="ValueOnWorkerProfileActivity" parent="AppTheme">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:fontFamily">sans-serif-regular</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
 
 </resources>
