@@ -100,8 +100,9 @@
                     android:layout_height="wrap_content"
                     android:numStars="5"
                     android:stepSize="1.0"
-                    style="?android:attr/ratingBarStyleSmall"
                     android:isIndicator="true"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:progressTint="@color/colorPrimaryDark"
                     />
 
             </TableRow>

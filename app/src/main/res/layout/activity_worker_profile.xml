@@ -150,6 +150,7 @@
                     android:stepSize="1.0"
                     android:isIndicator="true"
                     style="?android:attr/ratingBarStyleSmall"
+                    android:progressTint="@color/colorPrimaryDark"
                     />
             </LinearLayout>
 

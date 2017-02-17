@@ -166,7 +166,8 @@
     </style>
 
     <style name="RatingBar">
-        <item name="colorControlNormal">#FFFFFF</item>
+        <item name="colorControlNormal">@color/colorPrimaryDark</item>
     </style>
+
 
 </resources>

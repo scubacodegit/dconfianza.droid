@@ -81,8 +81,9 @@
                             android:layout_height="wrap_content"
                             android:numStars="5"
                             android:stepSize="1.0"
-                            style="?android:attr/ratingBarStyleSmall"
                             android:isIndicator="true"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:progressTint="@color/colorPrimaryDark"
                             />
                     </LinearLayout>
 
@@ -100,7 +101,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         style="@style/DataOnCardNoMarginStyle"/>
-
                     </LinearLayout>
 
             </TableRow>
@@ -108,6 +108,5 @@
 
         </TableLayout>
     </RelativeLayout>
-
 
 </android.support.v7.widget.CardView>
