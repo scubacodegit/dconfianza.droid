@@ -9,7 +9,7 @@ import com.scubacode.LoginActivity;
 /**
  * Created by htorres on 17/02/2016.
  */
-public class ActivitySecure extends ActivityFormBase
+public class ActivitySecure extends ActivityBase
 {
     protected UserSessionManager session;
     protected Boolean userIsLoggedIn=false;

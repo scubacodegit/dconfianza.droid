@@ -2,23 +2,18 @@ package com.scubacode.view;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.TextInputEditText;
 import android.text.Html;
-import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.TextView;
 
-
 import com.scubacode.dconfianza.R;
-import com.scubacode.library.ui.ActivityFormBase;
-import com.scubacode.library.ui.ActivityFragmentBase;
+import com.scubacode.library.ui.ActivityBase;
 
-import java.util.List;
 
 /**
  * Created by htorres on 28/09/2016.
  */
-public class AboutActivity extends ActivityFormBase
+public class AboutActivity extends ActivityBase
 {
     protected void onCreate(Bundle savedInstanceState)
     {

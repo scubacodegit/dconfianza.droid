@@ -18,11 +18,11 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 import com.scubacode.dconfianza.R;
+import com.scubacode.library.ui.ActivityBase;
 import com.scubacode.library.utility.Email;
 import com.scubacode.model.User;
 import com.scubacode.library.io.ApiAdapter;
 import com.scubacode.library.security.UserSessionManager;
-import com.scubacode.library.ui.ActivityFormBase;
 
 import com.scubacode.library.utility.Encryption;
 import com.scubacode.library.utility.HttpHelper;
@@ -32,7 +32,7 @@ import com.scubacode.dconfianza.MainActivity;
 /**
  * Created by htorres on 12/07/2016.
  */
-public class CreateAccountActivity extends ActivityFormBase
+public class CreateAccountActivity extends ActivityBase
 {
     //Form Fields
     private TextInputEditText firstName=null;

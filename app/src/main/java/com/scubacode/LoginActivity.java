@@ -7,17 +7,16 @@ import android.support.design.widget.TextInputEditText;
 import android.support.design.widget.TextInputLayout;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import com.scubacode.dconfianza.R;
+import com.scubacode.library.ui.ActivityBase;
 import com.scubacode.model.Credentials;
 import com.scubacode.model.User;
 import com.scubacode.library.io.ApiAdapter;
 import com.scubacode.library.security.UserSessionManager;
-import com.scubacode.library.ui.ActivityFormBase;
 import com.scubacode.library.utility.Email;
 import com.scubacode.library.utility.Encryption;
 import com.scubacode.library.utility.HttpHelper;
@@ -28,7 +27,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class LoginActivity extends ActivityFormBase
+public class LoginActivity extends ActivityBase
 {
     private TextInputLayout emailInputLayout=null;
     private TextInputEditText email=null;
