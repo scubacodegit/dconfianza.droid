@@ -38,71 +38,71 @@
             >
 
             <TableRow>
-                <TextView
+                <LinearLayout
+                    android:orientation="horizontal"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/wkprofile_addedby"
-                    style="@style/LabelOnCardStyle"/>
-
-                <TextView
-                    android:id="@+id/text_name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    style="@style/DataOnCardStyle"/>
-            </TableRow>
-
-            <TableRow>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/wkprofile_addedDate"
-                    style="@style/LabelOnCardStyle"/>
-
-                <TextView
-                    android:id="@+id/text_created_date"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    style="@style/DataOnCardStyle"/>
-
-            </TableRow>
-
-            <TableRow>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/main_rating"
-                    style="@style/LabelOnCardStyle"
-                    />
-
-                <LinearLayout>
-                    <RatingBar
-                        android:id="@+id/rating_bar"
+                    android:layout_height="wrap_content">
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:numStars="5"
-                        android:stepSize="1.0"
-                        style="?android:attr/ratingBarStyleSmall"
-                        android:isIndicator="true"
-                        />
+                        android:text="@string/wkprofile_addedby"
+                        style="@style/LabelOnCardStyle"/>
+
+                    <TextView
+                        android:id="@+id/text_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/DataOnCardStyle"/>
+
+                    <TextView
+                        android:id="@+id/text_created_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/DataOnCardStyle"/>
+
                 </LinearLayout>
+            </TableRow>
 
 
+            <TableRow>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                        <RatingBar
+                            android:id="@+id/rating_bar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:numStars="5"
+                            android:stepSize="1.0"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:isIndicator="true"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
             </TableRow>
 
             <TableRow>
-                <TextView
+                <LinearLayout
+                    android:orientation="horizontal"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/main_comments"
-                    style="@style/LabelOnCardStyle"
-                    />
-                <TextView
-                    android:id="@+id/text_comment"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    style="@style/DataOnCardStyle"/>
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/text_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/DataOnCardNoMarginStyle"/>
+
+                    </LinearLayout>
+
             </TableRow>
 
 

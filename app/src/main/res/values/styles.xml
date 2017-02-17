@@ -159,6 +159,12 @@
         <item name="android:layout_marginLeft">5dp</item>
     </style>
 
+    <style name="DataOnCardNoMarginStyle" parent="AppTheme">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:fontFamily">sans-serif-regular</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
     <style name="RatingBar">
         <item name="colorControlNormal">#FFFFFF</item>
     </style>
