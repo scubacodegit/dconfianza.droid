@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:context="com.scubacode.dconfianza.ContactActivity"
-    android:background="@color/colorPrimary">
+    android:background="@color/backGroundColor">
 
     <LinearLayout
     android:layout_width="match_parent"
@@ -29,6 +29,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/reg_first_name"
                 android:inputType="textPersonName"
+                android:textSize="@dimen/edittext_textsize_login"
                 />
         </android.support.design.widget.TextInputLayout>
 
@@ -45,6 +46,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/reg_email"
                 android:inputType="textEmailAddress"
+                android:textSize="@dimen/edittext_textsize_login"
                 />
         </android.support.design.widget.TextInputLayout>
 
@@ -65,15 +67,14 @@
                 android:fitsSystemWindows="true"
                 android:breakStrategy="balanced"
                 android:inputType="textMultiLine"
-                android:singleLine="false"
                 android:padding="5dp"
+                android:textSize="@dimen/edittext_textsize_login"
                 />
         </android.support.design.widget.TextInputLayout>
 
     <Button
         android:id="@+id/button_submit"
         android:text="@string/misc_submit"
-        android:textAllCaps="false"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/RaisedButtonDark"
