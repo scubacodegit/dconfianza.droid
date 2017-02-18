@@ -62,7 +62,6 @@
                         android:hint="@string/reg_email"
                         android:inputType="textEmailAddress"
                         android:textSize="@dimen/edittext_textsize_login"
-                        android:text="horaciotg@hotmail.com"
                         />
 
                 </android.support.design.widget.TextInputLayout>
@@ -80,7 +79,6 @@
                         android:hint="@string/reg_password"
                         android:inputType="textPassword"
                         android:textSize="@dimen/edittext_textsize_login"
-                        android:text="123"
                         />
 
                 </android.support.design.widget.TextInputLayout>

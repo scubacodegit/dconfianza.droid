@@ -5,6 +5,6 @@ package com.scubacode.library.io;
  */
 public class ApiConstants
 {
-    public static final String BASE_URL = "http://192.168.15.4"; //ip local
-    //public static final String BASE_URL = "http://148.240.23.47"; //ip publica
+    //public static final String BASE_URL = "http://192.168.15.4"; //ip local
+    public static final String BASE_URL = "http://scubacode.com"; //ip publica
 }
