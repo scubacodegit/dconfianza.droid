@@ -20,9 +20,8 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
 
         switch (position) {
             case 0:
-                SearchFragment tab1 = new SearchFragment();
+                return  new SearchFragment();
 
-                return tab1;
             case 1:
                 RecommendFragment tab2 = new RecommendFragment();
                 Bundle args = new Bundle();

@@ -1,7 +1,6 @@
 package com.scubacode.dconfianza;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -11,7 +10,6 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Spinner;
 
-import com.scubacode.dconfianza.R;
 import com.scubacode.library.ui.ActivityFragmentBase;
 import com.scubacode.model.Location;
 import com.scubacode.model.Service;
@@ -122,7 +120,7 @@ public class SearchFragment extends ActivityFragmentBase
     {
         Location location = new Location();
         location.setID(0);
-        location.setName(StringHelper.getValueFromResourceCode("main_location_prompt",getContext()));
+        location.setName(getString(R.string.main_location_prompt));
         values.add(location);
 
         spinner.setAdapter(new LocationSpinnerAdapter(spinner.getContext(), textViewResourceId ,values));
@@ -208,7 +206,7 @@ public class SearchFragment extends ActivityFragmentBase
         //agrega en la posicion 0 "Seleciones Ciudad"
         Service service = new Service();
         service.setID(0);
-        service.setName(StringHelper.getValueFromResourceCode("main_service_prompt",getContext()));
+        service.setName(getString(R.string.main_service_prompt));
         values.add(service);
         serviceSpinner.setAdapter(new ServiceSpinnerAdapter(serviceSpinner.getContext(), R.layout.support_simple_spinner_dropdown_item ,values));
         serviceSpinner.setSelection(values.size()-1);
@@ -229,7 +227,7 @@ public class SearchFragment extends ActivityFragmentBase
                     adapter = new WorkerCardAdapter(response.body());
                     recycler.setAdapter(adapter);
                     if(response.body().size()<=0)
-                        ActivityBase.reportTransient(StringHelper.getValueFromResourceCode("main_service_nodata",getContext()), ActivityBase.MessageType.Information,getContext());
+                        ActivityBase.reportTransient(getString(R.string.main_service_nodata), ActivityBase.MessageType.Information,getContext());
 
                 }
                 catch(Exception ex)

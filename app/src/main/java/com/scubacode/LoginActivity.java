@@ -90,8 +90,8 @@ public class LoginActivity extends ActivityBase
                     }
 
                     final ProgressDialog dialog = ProgressDialog.show(LoginActivity.this,
-                            StringHelper.getValueFromResourceCode("app_name", getBaseContext()),
-                            StringHelper.getValueFromResourceCode("misc_please_wait", getBaseContext()));
+                            getString(R.string.app_name),
+                            getString(R.string.misc_please_wait));
 
                     Credentials credentials = new Credentials();
                     credentials.setEmail(email.getText().toString());
@@ -105,7 +105,7 @@ public class LoginActivity extends ActivityBase
                             dialog.cancel();
                             if(response.code()==HttpHelper.HttpStatus.NotFound.getValue())
                             {
-                                reportTransient(StringHelper.getValueFromResourceCode("reg_access_denied", getBaseContext()));
+                                reportTransient(getString(R.string.reg_access_denied));
                             }
                             else
                             {
@@ -121,7 +121,7 @@ public class LoginActivity extends ActivityBase
                         {
                             dialog.cancel();
                             if (t.hashCode()== HttpHelper.HttpStatus.NotFound.getValue())
-                                reportTransient(StringHelper.getValueFromResourceCode("reg_access_denied", getBaseContext()));
+                                reportTransient(getString(R.string.reg_access_denied));
                             else
                                 handleException(t.getMessage(),true);
                         }

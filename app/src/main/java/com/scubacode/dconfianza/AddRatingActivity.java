@@ -114,8 +114,8 @@ public class AddRatingActivity extends ActivitySecure {
             public void onResponse(Call<Integer> call, Response<Integer> response)
             {
                 AlertDialog dialog = alertBox(
-                        StringHelper.getValueFromResourceCode("main_rating_added", getBaseContext()),
-                        StringHelper.getValueFromResourceCode("misc_ok", getBaseContext()),
+                        getString(R.string.main_rating_added),
+                        getString(R.string.misc_ok),
                         new DialogInterface.OnClickListener()
                         {
                             public void onClick(DialogInterface dialog, int which) {

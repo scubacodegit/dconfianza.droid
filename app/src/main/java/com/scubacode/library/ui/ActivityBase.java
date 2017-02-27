@@ -15,8 +15,6 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.scubacode.library.security.UserSessionManager;
-import com.scubacode.library.utility.StringHelper;
-
 import com.scubacode.dconfianza.R;
 import com.scubacode.dconfianza.ContactActivity;
 import com.scubacode.view.AboutActivity;
@@ -114,10 +112,6 @@ public class ActivityBase extends AppCompatActivity
         Asterisk,Error,Exclamation,Hand,Information,None,Question,Stop,Warning
     }
 
-    public String getEndpoint() {
-        return StringHelper.getValueFromResourceCode("endpoint",getApplicationContext());
-    }
-
     public void reportTransient(String message) {
         reportTransient(null, message);
     }
@@ -189,7 +183,7 @@ public class ActivityBase extends AppCompatActivity
 
     public static void handleException(Exception ex)
     {
-        int x=0;
+        String msg = ex.getMessage();
     }
 
     public static void handleException(String ex)

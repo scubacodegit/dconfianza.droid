@@ -29,8 +29,8 @@ public class MainActivity extends ActivitySecure
             setContentView(R.layout.activity_main);
             showToolbar(null, false);
             TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
-            tabLayout.addTab(tabLayout.newTab().setText(StringHelper.getValueFromResourceCode("main_search",this.getApplicationContext())));
-            tabLayout.addTab(tabLayout.newTab().setText(StringHelper.getValueFromResourceCode("main_recommend",this.getApplicationContext())));
+            tabLayout.addTab(tabLayout.newTab().setText(getString(R.string.main_search)));
+            tabLayout.addTab(tabLayout.newTab().setText(getString(R.string.main_recommend)));
             tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
             final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
