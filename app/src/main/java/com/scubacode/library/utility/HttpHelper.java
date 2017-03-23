@@ -9,7 +9,7 @@ public class HttpHelper {
     {
         NotFound(404),OK(200);
         private final int value;
-        private HttpStatus(int value)
+        HttpStatus(int value)
         {
             this.value=value;
         }

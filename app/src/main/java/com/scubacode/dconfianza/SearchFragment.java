@@ -16,7 +16,6 @@ import com.scubacode.model.Service;
 import com.scubacode.model.Worker;
 import com.scubacode.library.io.ApiAdapter;
 import com.scubacode.library.ui.ActivityBase;
-import com.scubacode.library.utility.StringHelper;
 
 import java.util.ArrayList;
 import java.util.List;

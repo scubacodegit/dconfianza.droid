@@ -7,7 +7,6 @@ import android.support.v4.view.ViewPager;
 
 import com.scubacode.dconfianza.R;
 import com.scubacode.library.ui.ActivitySecure;
-import com.scubacode.library.utility.StringHelper;
 
 /**
  * Created by htorres on 13/07/2016.

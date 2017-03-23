@@ -16,7 +16,6 @@ import com.scubacode.model.Worker;
 import com.scubacode.model.WorkerReview;
 import com.scubacode.library.io.ApiAdapter;
 import com.scubacode.library.ui.ActivitySecure;
-import com.scubacode.library.utility.StringHelper;
 
 import retrofit2.Call;
 import retrofit2.Callback;
