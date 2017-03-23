@@ -55,7 +55,6 @@ public class ActivityBase extends AppCompatActivity
         {
             actionBar.setDisplayUseLogoEnabled(true);
             actionBar.setDisplayShowHomeEnabled(true);
-            actionBar.setIcon(R.mipmap.ic_header);
         }
     }
 
