@@ -4,23 +4,12 @@
     <color name="colorPrimaryDark">#27B472</color>
     <color name="colorAccent">#27B472</color>
     <color name="editTextColorWhite">#FFFFFF</color>
-    <color name="editTextColorBlack">#000000</color>
-    <color name="backgroundtext_card">#53292929</color>
-
     <color name="inputLayoutError">#F44336</color>
     <color name="textColorHighlight">#0000</color>
     <color name="textColorLink">#0000</color>
-
-
-    <!--eliminar estos-->
-    <color name="colorPrimaryLlight">#FFCDD2</color>
     <color name="colorLabel">#212121</color>
-    <color name="colorTextContent">#C2C2B6</color>
-
     <color name="ButtonBackGround">#27B472</color>
     <color name="LabelColor">#FFFFFF</color>
     <color name="backGroundColor">#303545</color>
     <color name="ToolBarHamburgerColor">#27B472</color>
-
-
 </resources>
