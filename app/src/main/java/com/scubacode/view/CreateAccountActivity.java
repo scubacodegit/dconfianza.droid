@@ -2,6 +2,7 @@ package com.scubacode.view;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.TextInputEditText;
 import android.support.design.widget.TextInputLayout;
@@ -28,6 +29,8 @@ import com.scubacode.library.utility.Encryption;
 import com.scubacode.library.utility.HttpHelper;
 import com.scubacode.library.utility.StringHelper;
 import com.scubacode.dconfianza.MainActivity;
+
+import static com.scubacode.library.io.ApiConstants.TERMS_URL;
 
 /**
  * Created by htorres on 12/07/2016.
@@ -74,7 +77,9 @@ public class CreateAccountActivity extends ActivityBase
             {
                 public void onClick(View v)
                 {
-                    reportTransient(getString(R.string.read_terms),MessageType.Information);
+                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(TERMS_URL));
+                    startActivity(browserIntent);
+                    //reportTransient(getString(R.string.read_terms),MessageType.Information);
                 }
             }
             );
