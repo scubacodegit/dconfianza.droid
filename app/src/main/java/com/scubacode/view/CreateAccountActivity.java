@@ -79,7 +79,6 @@ public class CreateAccountActivity extends ActivityBase
                 {
                     Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(TERMS_URL));
                     startActivity(browserIntent);
-                    //reportTransient(getString(R.string.read_terms),MessageType.Information);
                 }
             }
             );

@@ -1,6 +1,7 @@
 package com.scubacode.view;
 
 import android.content.Intent;
+import android.content.pm.PackageInfo;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
@@ -21,8 +22,11 @@ public class AboutActivity extends ActivityBase
         {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_about);
+            PackageInfo pInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
             final TextView email = (TextView) findViewById(R.id.email_textview);
-            String text = "<a href='#'> "+ email.getText() +"</a>";
+            final TextView version= (TextView) findViewById(R.id.version);
+            version.setText(String.format("%1$s %2$s",getString(R.string.misc_about_text1), pInfo.versionName));
+            String text = String.format("<a href='#'>%1$s</a>",email.getText());
             email.setText(Html.fromHtml(text));
             email.setOnClickListener(new View.OnClickListener()
             {
